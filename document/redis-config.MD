@@ -6,30 +6,55 @@
 
 >1.save:
      在save的过程中，Redis的链接会关闭，因此会有一段时间程序无法链接Redis
+     
      以下来源于官方文档:
+     
       #
+      
       # Save the DB on disk:
+      
       #
+      
       #   save <seconds> <changes>
+      
       #
+      
       #   Will save the DB if both the given number of seconds and the given
+      
       #   number of write operations against the DB occurred.
+      
       #
+      
       #   In the example below the behaviour will be to save:
+      
       #   after 900 sec (15 min) if at least 1 key changed
+      
       #   after 300 sec (5 min) if at least 10 keys changed
+      
       #   after 60 sec if at least 10000 keys changed
+      
       #
+      
       #   Note: you can disable saving completely by commenting out all "save" lines.
+      
       #
+      
       #   It is also possible to remove all the previously configured save
+      
       #   points by adding a save directive with a single empty string argument
+      
       #   like in the following example:
+      
       #
+      
       #   save ""
+      
       #   save 900 1
+      
       #   save 300 10
+      
       #   save 60 10000
+      
       #   save 10 1
 
  **port <端口号>**
